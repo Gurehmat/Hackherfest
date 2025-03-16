@@ -111,3 +111,10 @@ sr.reveal(`.share__img, .send__content`, {
 sr.reveal(`.share__data, .send__img`, {
     origin: 'right'
 })
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const scroller = document.querySelector(".scroller__wrapper");
+    const images = scroller.innerHTML;
+    scroller.innerHTML += images; // Duplicate images for infinite effect
+});
